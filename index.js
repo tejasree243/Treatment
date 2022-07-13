@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const { urlencoded } = require("body-parser");
 //const uri = 'mongodb://localhost:27017';
 // Connection URL
-const uri = 'mongodb+srv://kaushanthi:chinnu123@clusterkaush.jshvwc0.mongodb.net/universe?retryWrites=true&w=majority';
+const uri = process.env.goodgirl;
 //const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 //const client = new MongoClient(url);
