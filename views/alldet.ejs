@@ -11,19 +11,19 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
         </svg>
-        <h6><%= data.city %> </h6>
+        <h6><%= data.location %> </h6>
     </div>
 </div>
 <div class="tttt">
     <h4 style="color: brown;">Information</h4>
-    <p><%= data.name %> is a College/ University located in <%= data.city %> and
-    This institute is one of the best institutes located on this city <%= data.city %></p>
+    <p><%= data.name %> is a hospital located in <%= data.location %> and
+    This hospital is one of the best institutes located on this city <%= data.location %></p>
 </div>
 <div class="tttt">
     <h4 style="color: brown;">Courses Offered</h4>
     <ol>
-        <% for(var i=0; i < data.courses.length; i++) { %>
-            <li><%= data.courses[i] %></li>
+        <% for(var i=0; i < data.speciality.length; i++) { %>
+            <li><%= data.speciality[i] %></li>
         <% } %>
     </ol>
 </div>
